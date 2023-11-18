@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,600;0,700;1,500;1,700&display=swap');
+
+/* CUSTOM PROPS */
+:root {
+  --midnight-green: #014E56;
+  --light-green: #79C8C7;
+  --light-red: #F67E7E;
+  --white: #fff;
+  --police-blue: #2C6269;
+  --deep-green: #004047;
+  --sacremento-green: #012F34;
+  --dark-green: #002529;
+}
+
 /* GLOBAL */
 
 html {
@@ -18,11 +32,12 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-size: 16px;
-  line-height: 1.5px;
-  font-family: "Arial", sans-serif;
-  background-color: #fff;
-  color: #222;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 600;
+  font-family: "Livvic", sans-serif;
+  background-color: var(--midnight-green);
+  color: var(--white);
 }
 
 img {
@@ -34,9 +49,9 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
