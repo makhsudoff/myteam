@@ -63,6 +63,7 @@ img {
   background-color: transparent;
   border-radius: 24px;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .button:active {
@@ -77,6 +78,17 @@ img {
 .button--white {
   border: 2px solid #FFF;
   color: #fff;
+}
+
+.button--green {
+  border: 2px solid var(--sacremento-green);
+  color: var(--sacremento-green);
+  flex-shrink: 0;
+}
+
+.button--green:hover {
+  background-color: var(--sacremento-green);
+  color: white;
 }
 
 /* SITE-HEADER */
@@ -297,4 +309,26 @@ img {
 }
 .reviews__item-img {
   align-self: center;
+}
+
+/* CTA */
+.cta {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background-color: var(--light-red);
+  background-image: url(../img/cta-bg.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.cta__container {
+  display: flex;
+  align-items: center;
+}
+.cta__heading {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: bold;
+  color: var(--sacremento-green);
+  margin-right: auto;
 }
